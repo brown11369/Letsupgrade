@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* reuseable css */
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+}
+
+
+/* *************** */
+
+
+/* header section */
+.header{
+    background-color: #ED1922;
+}
+.header_container{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+}
+.logoimg{
+    height: 90px;
+}
+.navigation{
+    width: 40%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-family: Tahoma, sans-serif;
+    color: #dff5f4;
+    font-size: 23px;
+}
+
+/* *************** */
+
+/* carousel section */
+
+.banner{
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+}
+.slider{
+    width: 500%;
+    display: flex;
+    animation-name: avn;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 3s;
+}
+.slide{
+    width: 20%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide:nth-child(1){
+    background-image: url(../media/image/1.jpg); 
+}
+.slide:nth-child(2){
+    background-image: url(../media/image/2.jpg);
+}
+.slide:nth-child(3){
+    background-image: url(../media/image/3.jpg);
+}
+.slide:nth-child(4){
+    background-image: url(../media/image/4.jpg);
+}
+.slide:nth-child(5){
+    background-image: url(../media/image/1.jpg);
+}
+@keyframes avn {
+    12.5%{
+        margin-left: -100%;
+    }
+    25%{
+        margin-left: -100%;
+    }
+    37.5%{
+        margin-left: -200%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    62.5%{
+        margin-left: -300%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    87.5%{
+        margin-left: -400%;
+    }
+    100%{
+        margin-left: -400%;
+    }
+    
+}
+
+
+
+
+
+
+/* Hero section */
+.hero_container{
+    width: 100%;
+    background-color: #9b9b9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards_container{
+    /* width: 90%; */
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.card{
+    width: 23%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+.container_1{
+    background-image: url("../media/image/thor.jpg");
+    filter: grayscale(100%);
+}
+.container_2{
+    background-image: url("../media/image/loki.jpg");
+    filter: grayscale(100%);
+}
+.container_3{
+    background-image: url("../media/image/hulk.jpg");
+    filter: grayscale(100%);
+}
+.container_4{
+    background-image: url("../media/image/odin.jpg");
+    filter: grayscale(100%);
+}
+.item1,.item2,.item3,.item4{
+    position: relative;
+}
+.item1{
+    background-color: rgba(23, 137, 219, 0.85);
+    height: 400px;
+    transition: 0.5s;
+    display: flex;
+    align-items: flex-end;    
+}
+
+.name{
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    color: white;
+    font-family: segoe ui;
+
+}
+.dtls{
+    font-family: segoe ui;
+    color: white;
+    padding-left: 20px;
+    padding-right: 13px;
+}
+.item1:hover{
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+.help{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 60px;
+    background-color: #ED1922;
+    border-radius: 50%;
+    animation-name: fury;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes fury {
+    25%{
+        padding: 5px;        
+    }
+    50%{
+        padding: 0px;
+    }
+    75%{
+        padding: 5px;
+    }
+    100%{
+        padding: 0px;
+    }
+
+    
+}
+.help:hover{
+    filter: saturate(200%);
+
+}
