@@ -19,28 +19,29 @@
 
 /* header section */
 .header{
-    background-color: #ED1922;
+    background-color: #323232;
 }
 .header_container{
     justify-content: space-between;
     align-items: center;
 }
 .logo{
-    width: 20%;
+    width: 25%;
 }
 .logoimg{
-    height: 90px;
+    height: 70px;
 }
 .navigation{
-    width: 40%;
+    width: 50%;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     font-family: Tahoma, sans-serif;
-    color: #dff5f4;
-    font-size: 23px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 /* *************** */
@@ -49,65 +50,74 @@
 
 .banner{
     width: 100%;
-    background-color: red;
     overflow: hidden;
 }
 .slider{
-    width: 500%;
+    width: 600%;
     display: flex;
     animation-name: avn;
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-delay: 3s;
 }
 .slide{
-    width: 20%;
-    height: 550px;
+    width: 16.7%;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 60px;
+    color: white;
 }
 .slide:nth-child(1){
-    background-image: url(../media/image/1.jpg); 
+    background-image: url(../media/image/1.png); 
 }
 .slide:nth-child(2){
-    background-image: url(../media/image/2.jpg);
+    background-image: url(../media/image/2.png);
 }
 .slide:nth-child(3){
-    background-image: url(../media/image/3.jpg);
+    background-image: url(../media/image/3.png);
 }
 .slide:nth-child(4){
-    background-image: url(../media/image/4.jpg);
+    background-image: url(../media/image/4.png);
 }
 .slide:nth-child(5){
-    background-image: url(../media/image/1.jpg);
+    background-image: url(../media/image/5.png);
+}
+.slide:nth-child(6){
+    background-image: url(../media/image/1.png);
 }
 @keyframes avn {
-    12.5%{
+    10%{
         margin-left: -100%;
     }
-    25%{
+    20%{
         margin-left: -100%;
     }
-    37.5%{
+    30%{
+        margin-left: -200%;
+    }
+    40%{
         margin-left: -200%;
     }
     50%{
-        margin-left: -200%;
-    }
-    62.5%{
         margin-left: -300%;
     }
-    75%{
+    60%{
         margin-left: -300%;
     }
-    87.5%{
+    70%{
         margin-left: -400%;
+    }
+    80%{
+        margin-left: -400%;
+    }
+    90%{
+        margin-left: -500%;
     }
     100%{
-        margin-left: -400%;
-    }
-    
+        margin-left: -500%;
+    }    
 }
 
 
