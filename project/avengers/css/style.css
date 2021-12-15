@@ -70,22 +70,22 @@
     color: white;
 }
 .slide:nth-child(1){
-    background-image: url(../media/image/1.png); 
+    background-image: url(../media/image/1.jpg); 
 }
 .slide:nth-child(2){
-    background-image: url(../media/image/2.png);
+    background-image: url(../media/image/2.jpg);
 }
 .slide:nth-child(3){
-    background-image: url(../media/image/3.png);
+    background-image: url(../media/image/3.jpg);
 }
 .slide:nth-child(4){
-    background-image: url(../media/image/4.png);
+    background-image: url(../media/image/4.jpg);
 }
 .slide:nth-child(5){
-    background-image: url(../media/image/5.png);
+    background-image: url(../media/image/5.jpg);
 }
 .slide:nth-child(6){
-    background-image: url(../media/image/1.png);
+    background-image: url(../media/image/1.jpg);
 }
 @keyframes avn {
     10%{
