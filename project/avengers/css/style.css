@@ -9,8 +9,9 @@
     justify-content: center;
 }
 .container{
-    width: 80%;
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -120,79 +121,89 @@
     }    
 }
 
+/* *************** */
 
+/* *************************** Videos section ********************* */
 
+.Video_container{
+    background-color: #dddddd;
+    padding-top: 40px;
+    height: 700px;
+}
 
+.Video{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
 
+/* *************** */
 
-/* Hero section */
+/* Characters section */
+
 .hero_container{
-    width: 100%;
-    background-color: #9b9b9b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #850000;
 }
 .cards_container{
-    /* width: 90%; */
     height: 90vh;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
 }
 .card{
-    width: 23%;
+    width: 22%;
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    /* overflow: hidden; */
+    filter: grayscale(200%);
 }
-.container_1{
-    background-image: url("../media/image/thor.jpg");
-    filter: grayscale(100%);
-}
-.container_2{
-    background-image: url("../media/image/loki.jpg");
-    filter: grayscale(100%);
-}
-.container_3{
-    background-image: url("../media/image/hulk.jpg");
-    filter: grayscale(100%);
-}
-.container_4{
-    background-image: url("../media/image/odin.jpg");
-    filter: grayscale(100%);
-}
-.item1,.item2,.item3,.item4{
-    position: relative;
-}
-.item1{
+.item{
+    height: 100%;
     background-color: rgba(23, 137, 219, 0.85);
-    height: 400px;
-    transition: 0.5s;
-    display: flex;
-    align-items: flex-end;    
+    position: relative;
+    overflow: hidden;
+    transition: 0.9s;
 }
-
 .name{
     position: absolute;
-    top: 150px;
-    left: 30%;
+    top: 40%;
+    left: 40%;
     color: white;
     font-family: segoe ui;
-
 }
 .dtls{
     font-family: segoe ui;
     color: white;
-    padding-left: 20px;
-    padding-right: 13px;
+    /* align-content: center; */
+    text-transform: capitalize;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 290px;
 }
-.item1:hover{
+
+.item:hover{
     background-color: transparent;
 }
+.item:hover .dtls{
+    margin-top: 400px;
+}
+.card:nth-child(1){
+    background-image: url("../media/image/thor.jpg");
+}
+.card:nth-child(2){
+    background-image: url("../media/image/loki.jpg");
+}
+.card:nth-child(3){
+    background-image: url("../media/image/hulk.jpg");
+}
+.card:nth-child(4){
+    background-image: url("../media/image/odin.jpg");
+}
+
+/* *************** */
+
+/* ************************* Comics section ************************* */
 
 
 
@@ -201,6 +212,31 @@
 
 
 
+
+
+/* *************** */
+
+/* *********************** scroll to top Button ********************* */
+
+.up{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    transform: rotate(90deg);
+    background-color: #323232;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* *********************** Help Button ********************* */
 
 .help{
     position: fixed;
