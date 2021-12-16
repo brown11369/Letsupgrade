@@ -205,6 +205,48 @@
 
 /* ************************* Comics section ************************* */
 
+.comics_container{
+    background-color: #cdcdcd;
+}
+.comics_cards{
+    height: 90vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.comics{
+    width: 22%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* filter: grayscale(200%); */
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+}
+.comics:nth-child(1){
+    background-image: url("../media/image/Ant-Man.png");
+}
+.comics:nth-child(2){
+    background-image: url("../media/image/IronMan.png");
+}
+.comics:nth-child(3){
+    background-image: url("../media/image/SpiderMan.png");
+}
+.comics:nth-child(4){
+    background-image: url("../media/image/190024-middle.png");
+}
+.comics:hover .img{
+    display: none;
+}
+
+/* *************** */
+
+/* *********************** movies section ********************* */
+
+
+
+
 
 
 
@@ -215,7 +257,6 @@
 
 
 /* *************** */
-
 /* *********************** scroll to top Button ********************* */
 
 .up{
@@ -231,9 +272,13 @@
     font-size: 40px;
     color: white;
     transform: rotate(90deg);
-    background-color: #323232;
+    background-color: rgba(255, 0, 0, 0.521);
     display: inline-block;
     border-radius: 50%;
+    transition: 0.7s;
+}
+.up:hover{
+    background-color: #ED1922;
 }
 
 /* *********************** Help Button ********************* */
