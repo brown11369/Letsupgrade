@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+.logo{
+    line-height: 80px;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 600;
+}
+.fury{
+    color: #5fa30f;
+}
+.search{
+    margin-top: 20px;
+}
+.srch{
+    float: left;
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    font-family: Arial;
+    border: 0.9px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    text-indent: 10px;
+}
+.srch:focus{
+    outline: none;
+}
+.btn{
+    float: right;
+    font-size: 15px;
+    font-family: Arial;
+    color: #fff;
+    font-weight: 600;
+    border: 0.9px solid #5fa30f;
+    background-color: #5fa30f;
+    width: 100px;
+    height: 42px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+}
+.btn:focus{
+    outline: none;
+}
+.extra{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial;
+    color: #000;
+    font-weight: 700;
+}
+nav{
+    height: 50px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+.nav-link2{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial;
+    color: #000;
+    font-weight: 700;
+    line-height: 50px;
+}
+.extra1{
+    width: 15%
+}
+.extra2 {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: 358px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-duration: 30s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.slide:nth-child(1){
+    background-color: red;
+    background-image: url("../media/img/rvslider1.jpg");
+    animation-name: slide5;
+}
+.slide:nth-child(2){
+    background-color: yellow;
+    background-image: url("../media/img/rvslider4.png");
+    animation-name: slide4;
+}
+.slide:nth-child(3){
+    background-color: pink;
+    background-image: url("../media/img/rvslider3.png");
+    animation-name: slide3;
+}
+.slide:nth-child(4){
+    background-color: orangered;
+    background-image: url("../media/img/rvslider2.jpg");
+    animation-name: slide2;
+}
+.slide:nth-child(5){
+    background-color: red;
+    background-image: url("../media/img/rvslider1.jpg");
+    animation-name: slide1;
+}
+
+@keyframes slide1 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes slide2 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes slide3 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes slide4 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes slide5 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.head_con{
+    width: 90%;
+    position: relative;
+    margin-top: 388px;
+    margin-bottom: 30px;
+}
+.head1{
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.para{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    color: dimgray;
+}
+.Categories{
+    width: 85%;
+}
+.product{
+    display: flex;
+    justify-content: space-between;flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+figure{
+    border: 0.9px solid gray;
+}
+figcaption{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(22, 22, 22);
+}
