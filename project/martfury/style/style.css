@@ -86,6 +86,27 @@ nav{
     font-weight: 700;
     line-height: 50px;
 }
+/* -------------------------dropdown------------------ */
+.link3{
+    z-index: 9;
+}
+.dropdown{
+    background-color: #f6f6f6;
+    list-style-type: none;
+    font-family: Arial;
+    color: #666;
+    display: none;
+    z-index: 9;
+    text-align: center;
+}
+.link3:hover  .dropdown{
+    display: block;
+    z-index: 9;
+}
+
+
+
+/* /////////////////////////////////////////////////// */
 .extra1{
     width: 15%
 }
@@ -94,9 +115,11 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+/* ///////////////////////////////////////////// */
 .banner{
     width: 100%;
     position: relative;
+    z-index: 1;
 }
 .slide{
     width: 100%;
@@ -273,3 +296,172 @@ figcaption{
     text-align: center;
     color: rgb(22, 22, 22);
 }
+
+/* /////////// subscribe section ////////// */
+
+.subscribe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    /* position: absolute; */
+    /* top: 70px; */
+    background-color: #f6f6f6;
+    animation-name: pop;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.subscribe_container{
+    background-image: url(../media/img/Untitled.png);
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px;
+}
+.content{
+    width: 35%;
+    height: 300px;
+    justify-content: center;
+}
+.sub_inp{
+    float: left;
+    width: 71.4%;
+    height: 40px;
+    font-size: 15px;
+    font-family: Arial;
+    border: 0.9px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    text-indent: 10px;
+}
+.sub_inp:focus{
+    outline: none;
+}
+.sub_btn{
+    float: right;
+    font-size: 15px;
+    font-family: Arial;
+    color: #fff;
+    font-weight: 600;
+    border: 0.9px solid #5fa30f;
+    background-color: #5fa30f;
+    width: 100px;
+    height: 42px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+}
+.sub_btn:focus{
+    outline: none;
+}
+.off{
+    color: #5fa30f;
+}
+.sub_title{
+    font-size: 45px;
+    color: #000;
+    padding-bottom: 50px;
+    font-family: segoe ui;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 75px;
+}
+.subt{
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: 400;
+}
+@keyframes pop {
+    5%{
+        display: block;
+    }
+    20%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }  
+}
+
+/* /////////////////////////////////////// */
+.footer{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+}
+.footer_container{
+    justify-content: space-between;
+}
+
+.footer_child{
+    width: 22%;
+    height: 200px;
+    color: #666;
+    font-family: segoe ui;
+    display: flex;
+    flex-direction: column;
+
+}
+.quick_links{
+    list-style-type: none;
+}
+.quick_link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footer_title{
+    font-family: segoe ui;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #000;
+}
+.blogs{
+    list-style: disc;
+}
+.social{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    width: 30px;
+    margin-top: 10px;
+}
+
+.icon1{
+    width: 100px;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* /////////////// copyright //////// */
+.copyright{
+    width: 100%;
+    height: 30px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: segoe ui;
+    color: #666;
+    line-height: 30px;
+    border-top: 0.1px solid #666;
+}
+li, button{
+    cursor: pointer;
+}
+.pay{
+    margin-top: 7px;
+}
+
+
+
+
