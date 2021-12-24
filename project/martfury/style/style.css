@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* ******* reuseable css section *******  */
 .box{
     width: 100%;
     display: flex;
@@ -12,10 +14,32 @@
     display: flex;
     justify-content: space-between;
 }
+.heading{
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.btn{
+    font-size: 15px;
+    font-family: Arial;
+    color: #fff;
+    font-weight: 600;
+    border: 0.9px solid #5fa30f;
+    background-color: #5fa30f;
+    width: 100px;
+    height: 42px;
+    border-radius: 4px;
+}
+.btn:focus{
+    outline: none;
+}
+/* ******* header section *******  */
+
 .header{
     height: 80px;
     background-color: #fff;
-    border-bottom: 1px solid rgb(190, 190, 190);
+    border-bottom: 1px solid #eaeaea;
 }
 .logo{
     line-height: 80px;
@@ -44,41 +68,39 @@
 .srch:focus{
     outline: none;
 }
-.btn{
+.sub_btn{
     float: right;
-    font-size: 15px;
-    font-family: Arial;
-    color: #fff;
-    font-weight: 600;
-    border: 0.9px solid #5fa30f;
-    background-color: #5fa30f;
-    width: 100px;
-    height: 42px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
     border-left: none;
 }
-.btn:focus{
-    outline: none;
-}
-.extra{
+.header-link{
     width: 20%;
     display: flex;
     justify-content: space-between;
     line-height: 80px;
 }
-.nav-link{
+.bold-nav-link{
     text-decoration: none;
     font-size: 15px;
     font-family: Arial;
     color: #000;
     font-weight: 700;
 }
-nav{
-    height: 50px;
-    border-bottom: 1px solid rgb(190, 190, 190);
+
+/* ******* navigation section ******* */
+
+.navigation{
+    border-bottom: 1px solid #eaeaea;
 }
-.nav-link2{
+.nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.bold-link{
     text-decoration: none;
     font-size: 15px;
     font-family: Arial;
@@ -86,36 +108,35 @@ nav{
     font-weight: 700;
     line-height: 50px;
 }
-/* -------------------------dropdown------------------ */
-.link3{
-    z-index: 9;
-}
+
+/* ******* dropdown section *******  */
+
 .dropdown{
     background-color: #f6f6f6;
     list-style-type: none;
-    font-family: Arial;
-    color: #000;
     display: none;
     z-index: 9;
-    text-align: center;
 }
-.link3:hover > .dropdown{
+.dropdown-link:hover > .dropdown{
     display: block;
     z-index: 9;
 }
-
-
-
-/* /////////////////////////////////////////////////// */
-.extra1{
-    width: 15%
+.link{
+    line-height: 50px;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 15px;
+    color: #5c5c5c;
+    text-align: center;
 }
-.extra2 {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
+.prime-navigation-link > .link{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-/* ///////////////////////////////////////////// */
+
+/* ******* banner section *******  */
+
 .banner{
     width: 100%;
     position: relative;
@@ -133,27 +154,22 @@ nav{
     animation-iteration-count: infinite;
 }
 .slide:nth-child(1){
-    background-color: red;
     background-image: url("../media/img/rvslider1.jpg");
     animation-name: slide5;
 }
 .slide:nth-child(2){
-    background-color: yellow;
     background-image: url("../media/img/rvslider4.png");
     animation-name: slide4;
 }
 .slide:nth-child(3){
-    background-color: pink;
     background-image: url("../media/img/rvslider2.jpg");
     animation-name: slide3;
 }
 .slide:nth-child(4){
-    background-color: orangered;
     background-image: url("../media/img/rvslider3.png");
     animation-name: slide2;
 }
 .slide:nth-child(5){
-    background-color: red;
     background-image: url("../media/img/rvslider1.jpg");
     animation-name: slide1;
 }
@@ -277,55 +293,170 @@ nav{
     color: #fff;
 }
 
-/* ----------------------------------2nd nav ----------------------------------------- */
-.head_con{
+/* ******* free delivery section ******* */
+
+.quality{
     width: 90%;
     position: relative;
     margin-top: 388px;
     margin-bottom: 30px;
 }
-.head1{
-    font-family: Arial;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-}
-.para{
+
+.quality_text{
     font-family: Arial;
     font-size: 15px;
     font-weight: 500;
     line-height: 30px;
     color: dimgray;
 }
+
+/* ******* top categories section ******* */
+
 .Categories{
     width: 85%;
 }
-.product{
+.product_container{
     display: flex;
-    justify-content: space-between;flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-figure{
-    border: 0.9px solid gray;
+.product{
+    width: 15%;
+    height: 270px;
+    border: 1px solid #eaeaea;
 }
-figcaption{
+.product_img{
+    padding-top: 20px;
+    width: 100%;
+}
+.product_heading{
+    line-height: 50px;
     font-family: Arial;
-    font-size: 16px;
     font-weight: 400;
+    font-size: 17px;
+    color: #000;
     text-align: center;
-    color: rgb(22, 22, 22);
 }
 
-/* /////////// subscribe section ////////// */
+/* ******* advertisement section ******* */
+
+.ad{
+    width: 48%;
+    height: 225px;
+    background-repeat: no-repeat;
+    font-size: 23px;
+    font-family: Arial;
+}
+.ad_text{
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.ad_text > .off{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.ad:nth-child(1){
+    background-image: url("../media/img/b1.jpg");
+
+}
+.ad:nth-child(2){
+    background-image: url("../media/img/a2.jpg");
+    color: #fff;
+}
+
+/* ******* Deals Of The Day ******* */
+
+.deals{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.deals_day{
+    width: 72%;
+    height: 500px;
+    border: 2px solid #5FA30F;
+    font-family: Arial;
+}
+.deals_box{
+    display: flex;
+}
+.deals_img{
+    width: 50%;
+}
+
+
+.time{
+    font-size: 30px;
+    color: red;
+    border: 1px solid #ececec;
+    font-weight: bolder;
+    padding: 20px;
+    line-height: 100px;
+
+}
+/*  */
+
+.seller{
+    width: 27%;
+    height: 500px;
+    border: 1px solid #ececec;
+    overflow: hidden;
+    text-align: center;
+    font-family: Arial;
+}
+.slide_day{
+    width: 300%;
+    display: flex;
+    animation-name: avn;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 3s;
+}
+.seller_slide{
+    width: 33.4%;
+    height: 500px;
+}
+.box2{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    border-bottom: 1px solid dimgray;
+}
+.slide_img{
+    width: 40%;
+}
+
+@keyframes avn {
+    25%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -100%;
+    }
+    75%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: -200%;
+    }  
+}
+
+/* ******* new section ******* */
+
+
+
+/* ******* newsletter section ******* */
 
 .subscribe{
     width: 100%;
     display: flex;
     justify-content: center;
     height: 400px;
-    /* position: absolute; */
-    /* top: 70px; */
     background-color: #f6f6f6;
     animation-name: pop;
     animation-duration: 5s;
@@ -361,25 +492,8 @@ figcaption{
 .sub_inp:focus{
     outline: none;
 }
-.sub_btn{
-    float: right;
-    font-size: 15px;
-    font-family: Arial;
-    color: #fff;
-    font-weight: 600;
-    border: 0.9px solid #5fa30f;
-    background-color: #5fa30f;
-    width: 100px;
-    height: 42px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-left: none;
-}
-.sub_btn:focus{
-    outline: none;
-}
 .off{
-    color: #5fa30f;
+    color: #FF0000;
 }
 .sub_title{
     font-size: 45px;
@@ -409,7 +523,8 @@ figcaption{
     }  
 }
 
-/* /////////////////////////////////////// */
+/*  ******* footer section ******* */
+
 .footer{
     width: 100%;
     padding-top: 50px;
@@ -464,7 +579,9 @@ figcaption{
     margin-right: 10px;
     cursor: pointer;
 }
-/* /////////////// copyright //////// */
+
+/* ******* copyright section ******* */
+
 .copyright{
     width: 100%;
     height: 30px;
