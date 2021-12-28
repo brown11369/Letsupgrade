@@ -113,6 +113,7 @@
     font-family: segoe ui;
     padding: 20px;
     border-radius: 0 0 10px 10px;
+    text-align: center;
 }
 .place_title{
     font-size: 25px;
