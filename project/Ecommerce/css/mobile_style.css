@@ -20,7 +20,7 @@
         font-family: segoe ui;
         font-size: 40px;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 25px;
         color: #007C64;
     }
     
@@ -62,7 +62,7 @@
     .nav{
         list-style-type: none;
         display: flex;
-        color: #25b196;
+        color: #5e5e5e;
         flex-wrap: wrap;
     }
     .nav-link{
@@ -73,6 +73,12 @@
         text-align: center;
         line-height: 50px;
         font-weight: 600;
+    }
+    .nav-link:first-child{
+        color: #25b196;
+    }
+    .nav-link:hover{
+        transform: rotate(0deg)
     }
     
     /*  +++++++++++++++++css for banner+++++++++++++ */
@@ -407,8 +413,29 @@
 
 
 
+    /* <!-- contact section --> */
 
-    
+   .contact_btn{
+    border: 1px solid #007C64;
+    color: #007c64;
+    margin-top: 0px;
+   }
+   .contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+    /* <!-- subscribe to news letter --> */
+
+    .sub_inp{
+        border: 1px solid white;
+    }
+    .sub_btn{
+        margin-top: 30px;
+    }
+    .sub_title{
+        color: white;
+    }
 
 
 

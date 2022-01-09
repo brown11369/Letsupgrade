@@ -19,7 +19,7 @@
     font-family: segoe ui;
     font-size: 40px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     color: #007C64;
 }
 
@@ -48,6 +48,10 @@
     color: #25b196;
 }
 
+.logo span{
+    color: #515153;
+}
+
 .navigation{
     width: 35%;
 }
@@ -55,7 +59,7 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    color: #25b196;
+    color: #515153;
 }
 .nav-link{
     height: 70px;
@@ -64,6 +68,13 @@
     text-align: center;
     line-height: 70px;
     font-weight: 600;
+    transition: .3s;
+}
+.nav-link:first-child{
+    color: #25b196;
+}
+.nav-link:hover{
+    transform: rotate(7deg)
 }
 
 /*  +++++++++++++++++css for banner+++++++++++++ */
@@ -327,6 +338,7 @@
 .gall_title{
     font-size: 70px;
     margin-bottom: 30px;
+    color: white;
 }
 .gall_btn{
     background-color: transparent;
@@ -362,6 +374,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    align-items: center;
 }
 .form_field{
     width: 100%;
