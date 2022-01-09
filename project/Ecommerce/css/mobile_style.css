@@ -427,6 +427,10 @@
 
     /* <!-- subscribe to news letter --> */
 
+    .subscribe_container {
+        height: 300px;
+    }
+
     .sub_inp{
         border: 1px solid white;
     }
@@ -462,7 +466,8 @@
         font-family: segoe ui;
         display: flex;
         flex-direction: column;
-
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .quick_links{
         list-style-type: none;
@@ -479,6 +484,7 @@
     }
     .blogs{
         list-style: disc;
+        margin-left: 30px;
     }
     .social{
         width: 80%;
